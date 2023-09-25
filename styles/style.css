@@ -2,4 +2,188 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background-color: var(--bg-color);
+}
+
+/* Шапка */
+.header {
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+  justify-items: end;
+  color: var(--accent-area-bg);
+  padding: var(--main-padding);
+  height: 100vh;
+}
+
+.decorated-zone {
+  position: relative;
+}
+
+.decorated-zone::before {
+  content: '';
+  position: absolute;
+
+  inset-inline-start: 10px;
+  inset-block-end: 10px; 
+
+  inline-size: 25px;
+  block-size: 25px;
+
+  border-block-end: 1px solid var(--accent-area-bg);
+  border-inline-start: 1px solid var(--accent-area-bg);
+}
+
+.decorated-zone::after {
+  content: '';
+  position: absolute;
+
+  inset-inline-end: 10px;
+  inset-block-start: 10px; 
+
+  inline-size: 25px;
+  block-size: 25px;
+
+  border-block-start: 1px solid var(--accent-area-bg);
+  border-inline-end: 1px solid var(--accent-area-bg);
+}
+
+/* .rec-area {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+} */
+
+/* .rec__text::after {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 9px;
+  height: 9px;
+  background-color: currentColor;
+  filter: drop-shadow(0 0 4px var(--accent-area-bg));
+  box-shadow: 0 0 8px var(--accent-area-bg);
+} */
+
+/* .header .header__recording:after {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 9px;
+  height: 9px;
+  background-color: currentColor;
+  filter: drop-shadow(0 0 4px #FF0070);
+  box-shadow: 0 0 8px #ff0070;
+} */
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.header__theme-menu-button {
+  
+  padding: 0 13px;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.header__theme-menu-button:hover {
+  outline: 1px solid var(--accent-area-bg-opacity);
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+  border-bottom: 1px solid var(--accent-area-bg);
+}
+
+.title {
+  color: var(--header-color);
+  font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
+  line-height: 82.5%;
+}
+
+.header__title {
+  text-shadow: 4px 4px 0 var(--accent-area-bg);
+}
+
+/* Основной контент */
+.content {
+  display: grid;
+  gap: 50px;
+  padding: 40px 10px;
+}
+
+.section {
+  display: grid;
+  gap: 20px;
+}
+
+.section__header {
+  color: var(--accent-area-bg);
+}
+
+.subsection__header {
+  font-weight: 700;
+  background-color: var(--accent-area-bg);
+}
+
+.section__content {
+  display: grid;
+  gap: 20px;
+}
+
+.section__content_block {
+  display: grid;
+  gap: 10px;
+}
+
+.block__header {
+  background-color: var(--accent-area-bg);
+}
+
+.block__text {
+  color: var(--text-color);
+}
+
+.block__text__link {
+  text-decoration: none;
+  text-shadow: 1px 1px var(--accent-area-bg);
+}
+
+.block__text__link:hover {
+  border-bottom: 1px solid var(--text-color);
+}
+
+.block__text__link:focus {
+  outline: none;
+}
+
+.block__text__link:focus-visible {
+  outline: 1px solid var(--text-color);
+}
+
+/* Подвал */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: var(--main-padding);
+}
+
+.footer__title {
+  text-shadow: 2px 2px 0 var(--accent-area-bg);
+}
+
+/* Медиа запросы */
+@media (width <= 375px) {
+  .section {
+    gri
+  }
+}
+
+@media (375px < width <= 768px) {
+
 }
