@@ -27,11 +27,11 @@
 }
 
 .decorated-zone::before {
-  content: '';
+  content: "";
   position: absolute;
 
   inset-inline-start: var(--main-padding);
-  inset-block-end: var(--main-padding); 
+  inset-block-end: var(--main-padding);
 
   inline-size: 25px;
   block-size: 25px;
@@ -41,11 +41,11 @@
 }
 
 .decorated-zone::after {
-  content: '';
+  content: "";
   position: absolute;
 
   inset-inline-end: var(--main-padding);
-  inset-block-start: var(--main-padding); 
+  inset-block-start: var(--main-padding);
 
   inline-size: 25px;
   block-size: 25px;
@@ -53,7 +53,6 @@
   border-block-start: 1px solid var(--accent-bg);
   border-inline-end: 1px solid var(--accent-bg);
 }
-
 
 .header__theme-menu {
   justify-self: end;
@@ -100,7 +99,7 @@
 .header__description {
   justify-self: end;
   align-self: center;
-  width:100%;
+  width: 100%;
 }
 
 .header__rec {
@@ -124,7 +123,6 @@
   background-color: var(--section-header-color);
   inset-inline-end: -18px;
   inset-block-start: 9px;
-
 }
 
 /* Основной контент */
@@ -237,14 +235,14 @@
     gap: 20px;
   }
 
-  .images_block{
+  .images_block {
     height: 100vw;
   }
 
   .images_block {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
+    grid-template-areas:
       "sunset sunset icecream"
       "tape books icecream"
       "tape street street";
