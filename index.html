@@ -22,10 +22,6 @@
   </head>
   <body class="page">
     <header class="header decorated-zone">
-      <!-- <div class="rec-area">
-        <p class="rec__text">REC</p>
-      </div> -->
-      
       <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
@@ -52,12 +48,13 @@
           </li>
         </ul>
       </nav>
+      <!-- <span class="header__rec" aria-hidden="true">rec</span> -->
       <h1 class="title header__title">no focus</h1>
-      <div class="content__text_block">
-        <h3>Что делать, когда не можешь делать ничего</h3>
-        <h3>Или почему нам так сложно сконцентрироваться, особенно когда очень надо</h3>
-        </h3>
-      </div>
+      <p class="block__header header__description">
+        Что делать, когда не можешь делать ничего<br>
+        Или почему нам так сложно сконцентрироваться, особенно когда очень надо
+      </p>
+      <span class="header__rec" aria-hidden="true">rec</span>
     </header>
     <main class="content">
       <!-- Первая секция -->
@@ -75,8 +72,7 @@
                 class="block__text__link"
                 href="https://www.dana.org/article/multicosts-of-multitasking/"
                 target="_blank">
-                выяснили
-              </a></span>, что мозгу тяжело концентрироваться
+                выяснили</a></span>, что мозгу тяжело концентрироваться
               даже на двух делах одновременно. А когда в поле внимания попадает
               несколько важных задач, организм паникует и выделяет кортизол и адреналин
               — «гормоны стресса». Из-за этого мы работаем невнимательно: ошибаемся
@@ -136,12 +132,12 @@
       </section>
 
       <!-- Третья секция -->
-      <section class="section">
+      <section class="section ">
         <h2 class="section__header">Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх секунд)</h2>
         <div class="section__content">
-          <h3 class="subsection__header">5 простых (на самом деле не очень) советов</h3>
+          <h3 class="block__header">5 простых (на самом деле не очень) советов</h3>
           <div class="section__content_block">
-            <h4 class="block__header">Представьте небо и облака</h4>
+            <h4 class="block__header block__header-lower">Представьте небо и облака</h4>
             <p class="block__text">
               Или листья в ручье. Тут дело в лёгкой медитации, которая помогает успокоиться. Ведь часто
               именно тревожные мысли о сложных задачах как раз и мешают эти сложные задачи делать. В
@@ -152,7 +148,7 @@
             </p>
           </div>
           <div class="section__content_block">
-            <h4 class="block__header">Включите музыку</h4>
+            <h4 class="block__header block__header-lower">Включите музыку</h4>
             <p class="block__text">
               Но не любую, и не любимую. Любимая может быть связана с сильными положительными эмоциями,
               которые тоже очень сильно отвлекают. Подойдёт тихая, спокойная, умеренно-ритмичная.
@@ -160,15 +156,14 @@
             </p>
           </div>
           <div class="section__content_block">
-            <h4 class="block__header">Прогуляйтесь</h4>
+            <h4 class="block__header block__header-lower">Прогуляйтесь</h4>
             <p class="block__text">
               Или даже пробегитесь. Лучше найти парк или лес: один эксперимент 
               <span><a
                 class="block__text__link"
                 href="https://www.sciencedirect.com/science/article/abs/pii/S0272494415000328"
                 target="_blank">
-                показал
-              </a></span>, что созерцание
+                показал</a></span>, что созерцание
               природы повышает концентрацию, в то время как после просмотра городских пейзажей она
               наоборот понижается. Можно совместить прогулку с физическими упражнениями или бегом —
               так в мозг поступит ещё больше кислорода и он будет лучше работать. Но и простая
@@ -176,7 +171,15 @@
             </p>
           </div>
           <div class="section__content_block">
-            <h4 class="block__header">Читайте</h4>
+            <h4 class="block__header block__header-lower">Хорошо ешьте</h4>
+            <p class="block__text">
+              Мы — не ваша бабушка, но это правда важно. Выбирайте продукты, которые препятствуют
+              резким скачкам сахара в крови. Например, с высоким содержанием клетчатки: овощи, ягоды,
+              бобовые (нут, чечевица, фасоль), коричневый рис, хлеб из цельнозерновой пшеницы.
+            </p>
+          </div>
+          <div class="section__content_block">
+            <h4 class="block__header block__header-lower">Читайте</h4>
             <p class="block__text">
               Настоящие бумажные книги. Это правда помогает с концентрацией: чтобы прочитать пост в соцсети,
               достаточно нескольких минут или даже секунд. А вот интересная книга способна затянуть и на
@@ -188,9 +191,40 @@
 
       <!-- Четвёртая секция -->
       <section class="section">
-        <div class="section__content">
-          <h3 class="subsection__header">А можно в картинках?</h3>
-          <!-- Тут будут картинки -->
+        <div class="section__content_block images_section">
+          <h3 class="block__header">А можно в картинках?</h3>
+          <div class="images_block">
+            <img
+              class="image sunset_image"
+              loading="lazy"
+              src="./images/sunset.png"
+              alt="Море с чайками"
+            >
+            <img
+              class="image ice-cream_image"
+              loading="lazy"
+              src="./images/ice-cream.png"
+              alt="Море мороженного"
+            >
+            <img
+              class="image tape_image"
+              loading="lazy"
+              src="./images/tape.png"
+              alt="Море музыки"
+            >
+            <img
+              class="image books_image"
+              loading="lazy"
+              src="./images/books.png"
+              alt="Море книг"
+            >
+            <img
+              class="image street_image"
+              loading="lazy"
+              src="./images/street.png"
+              alt="Море дорог"
+            >
+        </div>
         </div>
       </section>
     </main>
