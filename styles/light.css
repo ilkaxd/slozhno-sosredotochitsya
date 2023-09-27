@@ -1,15 +1,13 @@
 .page.theme_light {
-  --text-color: #353430;
+  --main-text-color: #353430;
   --bg-color: #fff1f7;
-
   --main-header-color: #ffc2e6;
+  --button-color: #353430;
+  --button-hover-border: #32312d66;
   --section-header-color: #353430;
-  --block-header-color: #353430;
-
-  --header-bg-image: url("../images/cover-image-light.png");
-  
-  --accent-bg: #ff8dcb;
-  --accent-bg-opacity: #32312d66;
-
+  --article-header-color: #353430;
+  --article-bg-color: #ff8dcb;
+  --link-shadow-color: #ff8dcb;
+  --bg-image: url("../images/cover-image-light.png");
   --visible: hidden;
 }
